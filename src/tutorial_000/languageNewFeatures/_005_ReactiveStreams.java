@@ -80,9 +80,9 @@ public class _005_ReactiveStreams {
 		System.out.println("Publishing Items to Subscriber");
 		// Here, the publisher submit the employees, that next goes inside the subscriber.
 		employeesList.stream().forEach(publisher::submit);
-		// The most importants pieces of above code are subscribe() and submit() methods invocation of publisher. Pay particular attention to them.
+		// The most important pieces of above code are subscribe() and submit() methods invocation of publisher. Pay particular attention to them.
 		
-		// Logic to wait till processing of all messages are over. Whitout it, we would get unwanted results.
+		// Logic to wait till processing of all messages are over. Whithout it, we would get unwanted results.
 		while (employeesList.size() != subscriber.getCounter()) {
 			Thread.sleep(10);
 		}
@@ -90,7 +90,7 @@ public class _005_ReactiveStreams {
 		// We should always close publisher to avoid any memory leaks.
 		publisher.close();
 		
-		// Wait for well display of outputs (allow the subscriber's onComplete() method to be called before the nexts println()).
+		// Wait for well display of outputs (allow the subscriber's onComplete() method to be called before the next println()).
 		Thread.sleep(300);
 		
 		System.out.println("End of first example.");
@@ -128,15 +128,15 @@ public class _005_ReactiveStreams {
 		// Publish items
 		System.out.println("Publishing Items to Subscriber");
 		// Here, the publisher submit the employees, that next goes inside the processor. Then the processor, inside himself, will
-		// transforme the employees to freelancers. This freelancers will then be submitted by the processor, and goes inside subscriber.
+		// transform the employees to freelancers. This freelancers will then be submitted by the processor, and goes inside subscriber.
 		employeesToFreelancers.stream().forEach(endPublisher::submit);
 
-		// Logic to wait for messages processing to finish. Whitout it, we would get unwanted results.
+		// Logic to wait for messages processing to finish. Whithout it, we would get unwanted results.
 		while (employeesToFreelancers.size() != endSubscriber.getCounter()) {
 			Thread.sleep(10);
 		}
 
-		// Closing publishers (don't forget the processor, thath is a publisher too).
+		// Closing publishers (don't forget the processor, that is a publisher too).
 		processor.close();
 		endPublisher.close();
 		

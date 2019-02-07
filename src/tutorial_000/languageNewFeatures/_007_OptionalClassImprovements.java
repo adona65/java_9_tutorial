@@ -32,7 +32,7 @@ public class _007_OptionalClassImprovements {
 		 System.out.println("=====================================");
 		 
 		 /*
-		  * or() : if a value is present in the optionnal, returns an Optional describing the value, otherwise returns an Optional produced by the 
+		  * or() : if a value is present in the optional, returns an Optional describing the value, otherwise returns an Optional produced by the 
 		  * supplier passed as parameter.
 		  */
 		 System.out.println(Optional.of("Rams").or(() -> Optional.of("No Name"))); // Optional[Rams]

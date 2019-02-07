@@ -18,7 +18,7 @@ public class _004_CompletableFutureApiImprovements {
 		new CompletableFuture().defaultExecutor();
 		
 		/*
-		 * METHOD newIncompleteFuture() : The newIncompleteFuture, also known as the â€œvirtual constructorâ€�, is used to get a new completable future 
+		 * METHOD newIncompleteFuture() : The newIncompleteFuture, also known as the "virtual constructor", is used to get a new completable future 
 		 * instance of the same type. This method is especially useful when subclassing CompletableFuture, mainly because it is used internally in 
 		 * almost all methods returning a new CompletionStage, allowing subclasses to control what subtype gets returned by such methods.
 		 */
@@ -30,7 +30,7 @@ public class _004_CompletableFutureApiImprovements {
 		 * - When this gets completed exceptionally with exception X, the new one is also completed exceptionally with a CompletionException with X 
 		 *   as cause
 		 *   
-		 *   This method may be useful as a form of â€œdefensive copyingâ€�, to prevent clients from completing, while still being able to arrange dependent 
+		 *   This method may be useful as a form of "defensive copying", to prevent clients from completing, while still being able to arrange dependent 
 		 *   actions on a specific instance of CompletableFuture.
 		 */
 		new CompletableFuture().copy();
@@ -62,7 +62,7 @@ public class _004_CompletableFutureApiImprovements {
 		
 		/*
 		 * METHODS delayedExecutor() : Returns a new Executor that submits a task to the given base executor after the given delay (or no delay if non-positive).
-		 * Each delay commences upon invocation of the returned executorâ€™s execute method. If no executor is specified the default executor 
+		 * Each delay commences upon invocation of the returned executor's execute method. If no executor is specified the default executor 
 		 * (ForkJoinPool.commonPool()) will be used.
 		 */
 		// Executor delayedExecutor(long delay, TimeUnit unit, Executor executor)

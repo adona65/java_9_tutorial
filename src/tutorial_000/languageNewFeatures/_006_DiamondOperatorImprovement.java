@@ -5,7 +5,7 @@ public class _006_DiamondOperatorImprovement {
 	public static void main(String[] args) {
 		/*
 		 * Diamond operator was introduced in java 7 to make code more readable but it could not be used with Anonymous inner classes. In java 9, it
-		 * can be used with annonymous class as well to simplify code and improves readability.
+		 * can be used with anonymous class as well to simplify code and improves readability.
 		 */
 
 		// <> instead of <Integer> prior to Java 9

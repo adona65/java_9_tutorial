@@ -25,7 +25,7 @@ public class _000_FactoryMethods {
 		 * java's versions :
 		 * - We cannot add, modify and delete their elements. If we try to perform Add/Delete/Update operations on them, we will get an
 		 *   UnsupportedOperationException.
-		 * - They don’t allow null elements. If we try to create them with null elements, we will get NullPointerException.
+		 * - They don't allow null elements. If we try to create them with null elements, we will get NullPointerException.
 		 * - They are serializable if all elements are serializable. 
 		 */
 		
