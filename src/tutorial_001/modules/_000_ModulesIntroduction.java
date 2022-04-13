@@ -65,7 +65,7 @@ public class _000_ModulesIntroduction {
 	 * Look at jdk8_application.png image to see a classical java 8 application folders hierarchy. Top level components are Packages, that contains
 	 * classes and so on. If we compare this organisation with it of java 9 (look at jdk9_application.png), we may see that java 9 applications does not 
 	 * have much differences with this. It just introduced a new component called "Module", which is used to group a set of related Packages, plus a
-	 * "module-info.java" file which job is to describe modules in our application (we wiil see this later).
+	 * "module-info.java" file which job is to describe modules in our application (we will see this later).
 	 * 
 	 * Beware : Each Java 9 Module have one and only one Module and one Module Descriptor. Unlike packages and sub-packages, we cannot create multiple 
 	 * modules into a single module.
